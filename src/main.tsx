@@ -11,7 +11,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={ DefaultTheme }>
       <MainContainer>
-        {/* <img src={ BackgroundImg } /> */}
           <GlobalStyles />
           <App />
       </MainContainer>

@@ -19,13 +19,13 @@ export function AboutMe () {
                     <CardWrapper>
                         <Card
                             variants="half"
-                            icon={ <Medal size={20} weight='fill' color='#4DB3F3' /> }
+                            icon={<Medal size={20} weight='fill' color='#4DB3F3' />}
                             title='Experiências'
                             description='1 ano de experiência'
                         />
                         <Card 
                             variants="half"
-                            icon={ <Briefcase size={20} weight='fill' color='#4DB3F3' /> }
+                            icon={<Briefcase size={20} weight='fill' color='#4DB3F3' />}
                             title='Projetos'
                             description='10 projetos'
                         />

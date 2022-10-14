@@ -5,7 +5,7 @@ import { ButtonContainer } from "./style";
     interface ButtonProps {
         text: string;
         variants: 'primary' | 'secondary';
-        weights: 'light' |'regular' | 'medium' | 'bold' | 'black';
+        weights?: 'light' |'regular' | 'medium' | 'bold' | 'black';
     }
 
 export function Button ({ text, variants, weights }: ButtonProps) {
