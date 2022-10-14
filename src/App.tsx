@@ -1,9 +1,6 @@
-import { useRef } from 'react';
-import useScrollSnap from 'react-use-scroll-snap';
 import { AboutMe } from './pages/AboutMe';
 import { Home } from './pages/Home';
 import { Knowledge } from './pages/Knowledge';
-import { Projects } from './pages/Projects';
 
 function App() {
   return (
@@ -11,7 +8,6 @@ function App() {
       <Home />
       <AboutMe />
       <Knowledge />
-      {/* <Projects /> */}
     </section>
   )
 }
