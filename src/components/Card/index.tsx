@@ -28,6 +28,7 @@ export function Card ({ icon, title, description, iconBg, name, variants, experi
                     <h3>{ title }</h3>
                     <h4>{ experience }</h4>
                 </section> : null}
+                
         </CardContainer>
     )
 }
