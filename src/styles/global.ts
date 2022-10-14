@@ -15,11 +15,23 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType}>`
         
         display: flex;
         position: relative;
+        -webkit-font-smoothing: antialiased;
     }
 
     button {
         cursor: pointer;
         font-family: ${({ theme }) => theme.fontFamily.roboto};
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.4rem;
+    }
+    ::-webkit-scrollbar-track {
+        background: ${({ theme }) => theme.colors["blue-dark"]}
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 2rem;
+        background: ${({ theme }) => theme.colors["blue-light-card"]}
     }
 `;
 

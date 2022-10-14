@@ -2,11 +2,13 @@ import styled, { css } from "styled-components";
 
     interface ButtonContainerProps {
         variant: 'primary' | 'secondary';
+        weight?: 'light' |'regular' | 'medium' | 'bold' | 'black';
     }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
     padding: 8px 16px;
     border-radius: 6px;
+    font-weight: ${({ theme, weight }) => theme.fontWeight[`${weight ?? 'regular'}`]};
 
     ${({ variant, theme }) => variant === 'primary' && css`
         border: 2px solid ${theme.colors[`blue-light`]};

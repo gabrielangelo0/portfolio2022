@@ -9,7 +9,8 @@ export const DefaultTheme = {
         'blue-dark': '#201F37',
         'blue-dark-card': '#292B66',
         'gray-100': '#CECCCC',
-        'gradient-blue': 'linear-gradient(90deg, rgba(77, 179, 243, 0.44) 4.07%, rgba(31, 31, 56, 0.44) 100%)',
+        'gradient-blue-90deg': 'linear-gradient(90deg, rgba(77, 179, 243, 0.44) 4.07%, rgba(31, 31, 56, 0.44) 100%)',
+        'gradient-blue-180deg': 'linear-gradient(180deg, rgba(77, 179, 243, 0.44) 0.07%, rgba(0, 0, 0, 0.8) 100%)',
     },
     fontFamily: {
         'roboto': '"Roboto", sans-serif'
@@ -26,5 +27,10 @@ export const DefaultTheme = {
         'medium': '500',
         'bold': '700',
         'black': '900',
+    },
+    alignText: {
+        'left': 'left',
+        'center': 'center',
+        'right': 'right',
     }
 }

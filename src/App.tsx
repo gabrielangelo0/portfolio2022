@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import useScrollSnap from 'react-use-scroll-snap';
 import { AboutMe } from './pages/AboutMe';
 import { Home } from './pages/Home';
+import { Knowledge } from './pages/Knowledge';
 
 function App() {
     // const scrollRef = useRef(null);
@@ -13,6 +14,7 @@ function App() {
       >
       <Home />
       <AboutMe />
+      <Knowledge />
     </section>
   )
 }
