@@ -3,18 +3,15 @@ import useScrollSnap from 'react-use-scroll-snap';
 import { AboutMe } from './pages/AboutMe';
 import { Home } from './pages/Home';
 import { Knowledge } from './pages/Knowledge';
+import { Projects } from './pages/Projects';
 
 function App() {
-    // const scrollRef = useRef(null);
-    // useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
-
   return (
-    <section 
-      // ref={scrollRef}
-      >
+    <section>
       <Home />
       <AboutMe />
       <Knowledge />
+      {/* <Projects /> */}
     </section>
   )
 }

@@ -37,15 +37,15 @@ export const ImageAboutMe = styled.img`
     height: 20rem;
     width: 20rem;
     border-radius: 1.25rem;
-    transform: rotate(10deg);
+    transform: rotate(0deg);
     transition: all 500ms;
 
-    
-    &:hover {
-        transform: rotate(0deg);
-    
+    img:hover {
+        span {
+            transform: rotate(0deg);
+        }
     }
-
+    
     @media (max-width: 768px) {
         width: 80vw; 
     }
@@ -58,7 +58,10 @@ export const PersonBox = styled.span`
     background: ${({ theme }) => theme.colors["blue-light-card"]};
     display: flex;
     z-index: -1;
+    transform: rotate(10deg);
     border-radius: 1.25rem;
+
+    
 
     @media (max-width: 768px) {
         width: 100%;

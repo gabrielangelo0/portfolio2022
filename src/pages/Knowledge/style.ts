@@ -9,7 +9,7 @@ export const KnowledgeContainer = styled(DefaultLayout)`
     text-align: center; 
 `;
 export const KnowledgeBox = styled.div`
-    margin-top: 12rem;
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
