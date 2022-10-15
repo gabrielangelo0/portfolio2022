@@ -6,7 +6,7 @@ import Arrow from '../../assets/icons/arrow.svg'
 import React from "react";
 
 export function Projects () {
-    const carousel = React.useRef<HTMLDivElement>(null);
+    const carousel = React.useRef<HTMLDivElement & HTMLInputElement & any>(null);
 
     return (
         <ProjectsContainer>
@@ -23,12 +23,12 @@ export function Projects () {
             </ProjectBox>
                         <ButtonArrowContainer>
                             <ArrowButton 
-                                // onClick={ () => { carousel.current.scrollLeft -= carousel.current.offsetWidth} }
+                                onClick={ () => { carousel.current.scrollLeft -= carousel.current.offsetWidth} }
                             > 
                                     <ArrowLeft src={ Arrow } />
                             </ArrowButton>
                             <ArrowButton 
-                                // onClick={ () => { carousel.current.scrollLeft += carousel.current.offsetWidth} }
+                                onClick={ () => { carousel.current.scrollLeft += carousel.current.offsetWidth} }
                             >
                                     <ArrowRight src={ Arrow } />
                             </ArrowButton>
