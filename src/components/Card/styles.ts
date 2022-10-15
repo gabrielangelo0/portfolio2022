@@ -14,7 +14,6 @@ export const CardContainer = styled.div<CardContainerProps>`
     display: flex;
     position: relative;
     flex-direction: column;
-    transition: all 5000ms;
 
     ${({ variant }) => variant === 'full' && css`
     padding: 1.5rem 4.7rem;
@@ -34,7 +33,9 @@ export const CardContainer = styled.div<CardContainerProps>`
             bottom: 0;
             background: ${({ theme }) => theme.colors["gradient-blue-180deg"]};
             border-radius: 1rem;
-            z-index: -1;
+            z-index: 1;
+            opacity: 0;
+            transition: all 500ms;
 
             h4 {
                 font-weight: 400;
@@ -44,7 +45,9 @@ export const CardContainer = styled.div<CardContainerProps>`
         &:hover {
             .up {
                 background: ${({ theme }) => theme.colors["gradient-blue-180deg"]};
-                z-index: 2;
+                /* z-index: 2; */
+                opacity: 1;
+
 
             }
 

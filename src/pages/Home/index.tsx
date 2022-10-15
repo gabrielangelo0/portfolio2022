@@ -1,7 +1,9 @@
-import { HomeContainer, RectangleImg, PersonBox, TitleTextContainer, ButtonHome } from "./styles";
-import MeImage from "../../assets/Intro.png";
+import { HomeContainer, RectangleImg, PersonBox, TitleTextContainer, ButtonHome, LinkRefer } from "./styles";
 import { RegularText, TitleText } from "../../components/Typograph";
 import { Button } from "../../components/Button";
+
+import Curriculum from "../../../src/assets/download/curriculum-Gabriel.pdf";
+import MeImage from "../../assets/Intro.png";
 
 export function Home () {
     return (
@@ -12,7 +14,7 @@ export function Home () {
                 <RegularText>Frontend Developer</RegularText>
             </TitleTextContainer>
             <ButtonHome>
-                <Button text="Download CV" variants="primary" />
+                <LinkRefer href={ Curriculum } target='_blank'><Button text="Download CV" variants="primary"  /></LinkRefer>
                 <Button text="Vamos conversar" variants="secondary" />
             </ButtonHome>
             <PersonBox>

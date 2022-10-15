@@ -23,11 +23,11 @@ export function Card ({ icon, title, description, iconBg, name, variants, experi
                         {!description ? null : <p>{ description }</p>}
                         {!iconBg ? null : <img src={ iconBg } alt={ name } />}
                     </section>
-                {experience ?
-                <section className="up">
-                    <h3>{ title }</h3>
-                    <h4>{ experience }</h4>
-                </section> : null}
+                    {experience ?
+                    <section className="up">
+                        <h3>{ title }</h3>
+                        <h4>{ experience }</h4>
+                    </section> : null}
 
         </CardContainer>
     )

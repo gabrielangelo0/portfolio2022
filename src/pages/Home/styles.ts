@@ -15,6 +15,8 @@ export const HomeContainer = styled(DefaultLayout)`
 `;
 export const TitleTextContainer = styled.div`
 `;
+export const LinkRefer = styled.a`
+`;
 export const ButtonHome = styled.div`
     display: flex;
     flex-direction: row;

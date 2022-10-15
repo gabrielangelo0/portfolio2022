@@ -25,12 +25,20 @@ export const AboutMeCardContainer = styled.div`
         align-items: center;
         gap: 0rem;
     }
-    `;
+`;
 
 export const PersonSection = styled.section`
     display: flex;
     position: relative;
     margin-bottom: 5rem;
+
+    transition: all 500ms;
+
+     &:hover {
+            span {
+                transform: rotate(0deg);
+            }
+        }
 `;
 
 export const ImageAboutMe = styled.img`
@@ -39,12 +47,7 @@ export const ImageAboutMe = styled.img`
     border-radius: 1.25rem;
     transform: rotate(0deg);
     transition: all 500ms;
-
-    img:hover {
-        span {
-            transform: rotate(0deg);
-        }
-    }
+    z-index: 1;
     
     @media (max-width: 768px) {
         width: 80vw; 
@@ -57,10 +60,12 @@ export const PersonBox = styled.span`
     height: 20rem;
     background: ${({ theme }) => theme.colors["blue-light-card"]};
     display: flex;
-    z-index: -1;
-    transform: rotate(10deg);
+    z-index: 0;
+    opacity: 1;
+    transform: rotate(15deg);
     border-radius: 1.25rem;
-
+    transition: all 500ms;
+    
     
 
     @media (max-width: 768px) {
@@ -76,11 +81,8 @@ export const ExperiencesCard = styled.div`
     gap: 1.25rem;
 
     @media (max-width: 768px) {
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
         padding: 1rem;
-
     }
 `;
 

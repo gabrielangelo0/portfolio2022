@@ -12,8 +12,8 @@ export function AboutMe () {
             <TitleText color="blue-light" weight="black">SOBRE MIM</TitleText>
             <AboutMeCardContainer>
                 <PersonSection>
+                        <PersonBox></PersonBox>
                         <ImageAboutMe src={ CardPerson } />
-                        <PersonBox />
                 </PersonSection>
                 <ExperiencesCard>
                     <CardWrapper>
