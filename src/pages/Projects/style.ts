@@ -85,12 +85,12 @@ export const ButtonArrowContainer = styled.div`
     position: absolute;
     justify-content: space-between;
     width: 100%;
-    max-width: 80rem;
+    max-width: 75rem;
     
     transform: translateY(290%);
     
     @media (max-width: 768px) {
         max-width: 20rem;
-        transform: translateY(400%);
+        transform: translateY(290%);
     }
 `;
