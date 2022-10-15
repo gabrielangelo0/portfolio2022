@@ -23,11 +23,13 @@ export function Projects () {
             </ProjectBox>
                         <ButtonArrowContainer>
                             <ArrowButton 
-                                onClick={ () => { carousel.current.scrollLeft -= carousel.current.offsetWidth} }> 
+                                // onClick={ () => { carousel.current.scrollLeft -= carousel.current.offsetWidth} }
+                            > 
                                     <ArrowLeft src={ Arrow } />
                             </ArrowButton>
                             <ArrowButton 
-                                onClick={ () => { carousel.current.scrollLeft += carousel.current.offsetWidth} }>
+                                // onClick={ () => { carousel.current.scrollLeft += carousel.current.offsetWidth} }
+                            >
                                     <ArrowRight src={ Arrow } />
                             </ArrowButton>
                         </ButtonArrowContainer>
