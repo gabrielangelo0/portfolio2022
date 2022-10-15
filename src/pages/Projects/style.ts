@@ -7,11 +7,11 @@ export const ProjectsContainer = styled(DefaultLayout)`
     justify-content: start;
     align-items: center;
     text-align: center; 
+    margin: 6rem 0;
 `;
 export const ProjectBox = styled.div`
-    margin-top: 6rem;
+    margin: 6rem 0;
     max-width: 80rem;
-    /* flex: none; */
     position: relative;
     display: flex;
     overflow: auto;
@@ -22,8 +22,8 @@ export const ProjectBox = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin-left: 1.5rem;
-        max-width: 90vw;
+        margin-top: 0rem;
+        max-width: 100vw;
     }
     `;
 
@@ -34,6 +34,10 @@ export const Carousel = styled.div`
 
     gap: 1.25rem;
     scroll-behavior: smooth;
+
+    span:first-child {
+        margin-left: 2rem;
+    }
 
     span {
         border-radius: 15px;
@@ -60,7 +64,7 @@ export const Carousel = styled.div`
 export const ArrowButton = styled.button`
     background: transparent;
     border: none;
-z-index: 100;
+    z-index: 100;
 `;
 export const ArrowLeft = styled.img`
     display: flex;

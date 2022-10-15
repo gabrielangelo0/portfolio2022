@@ -7,6 +7,11 @@ export const KnowledgeContainer = styled(DefaultLayout)`
     justify-content: start;
     align-items: center;
     text-align: center; 
+    
+    @media (max-width: 768px) {
+        margin-top: 6rem;
+
+    }
 `;
 export const KnowledgeBox = styled.div`
     margin-top: 6rem;
@@ -16,6 +21,6 @@ export const KnowledgeBox = styled.div`
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
     }
 `;
